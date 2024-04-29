@@ -1,0 +1,1 @@
+[![Run tests every 5 minutes](https://github.com/starzykbartlomiej/synthetic-tests-playwright/actions/workflows/scheduled-tests-run.yml/badge.svg)](https://github.com/starzykbartlomiej/synthetic-tests-playwright/actions/workflows/scheduled-tests-run.yml)
