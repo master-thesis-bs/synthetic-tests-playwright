@@ -1,4 +1,4 @@
-name: Run tests every 5 minutes
+name: Run tests manually
 on: workflow_dispatch
 
 jobs:
