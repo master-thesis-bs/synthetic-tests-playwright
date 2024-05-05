@@ -1,4 +1,3 @@
-[Last test results page](https://master-thesis-bs.github.io/synthetic-tests-playwright/)
 | Github action  | Description |
 | ------------- | ------------- |
 | Github page build  | [![pages-build-deployment](https://github.com/master-thesis-bs/synthetic-tests-playwright/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/master-thesis-bs/synthetic-tests-playwright/actions/workflows/pages/pages-build-deployment)  |
