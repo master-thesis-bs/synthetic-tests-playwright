@@ -32,6 +32,7 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
       - name: Post to a Slack channel
+        if: always()
         id: slack
         uses: slackapi/slack-github-action@v1.26.0
         with:
