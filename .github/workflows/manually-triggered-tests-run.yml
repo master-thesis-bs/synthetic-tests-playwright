@@ -48,23 +48,21 @@ jobs:
               "blocks": [
                 { "type": "divider" },
                 {
-                  "type": "image",
-                  "title": {
-                    "type": "plain_text",
-                    "text": "Slack Slack Slack",
-                    "emoji": true
-                  },
-                  "image_url": "https://media.makeameme.org/created/a-slack-this.jpg",
-                  "alt_text": "marg"
-                },
-                {
                   "type": "actions",
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "Report url"
+                      },
+                      "url": "https://master-thesis-bs.github.io/synthetic-tests-playwright/"
+                    }
                   "elements": [
                     {
                       "type": "button",
                       "text": {
                         "type": "plain_text",
-                        "text": "${{ github.sha }}"
+                        "text": "Github action url"
                       },
                       "url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
                     }
