@@ -42,7 +42,6 @@ jobs:
         uses: slackapi/slack-github-action@v1.26.0
         with:
           channel-id: 'C0721UJDXSP'
-          # For posting a rich message using Block Kit
           payload: |
             {
               "blocks": [
@@ -56,7 +55,7 @@ jobs:
                         "text": "Report url"
                       },
                       "url": "https://master-thesis-bs.github.io/synthetic-tests-playwright/"
-                    }
+                    },
                   "elements": [
                     {
                       "type": "button",
@@ -69,7 +68,7 @@ jobs:
                   ]
                 }
               ],
-              "channel-id": "NEW_TARGET_CHANNEL_ID"
+              "channel-id": "C0721UJDXSP"
             }
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
