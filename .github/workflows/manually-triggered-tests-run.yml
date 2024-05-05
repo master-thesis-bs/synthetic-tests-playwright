@@ -1,4 +1,4 @@
-name: Run tests manually
+name: Manually triggered tests
 on: workflow_dispatch
 
 jobs:
