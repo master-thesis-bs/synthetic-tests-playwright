@@ -7,7 +7,7 @@ export default defineConfig({
   workers: process.env.CI ? 2 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://34.118.94.255',
+    baseURL: 'https://master-thesis-bs.click',
     trace: 'on-first-retry',
   },
 
