@@ -42,7 +42,7 @@ jobs:
         run: |
           echo "passed=$(jq '.stats.expected' < playwright-report/results.json)" >> $GITHUB_ENV
           echo "total=$(( $(jq '.stats.expected' < playwright-report/results.json) + $(jq '.stats.unexpected' < playwright-report/results.json) ))" >> $GITHUB_ENV
-          echo "duration=$(jq '.stats.duration' < playwright-report/results.json)" >> $GITHUB_ENV
+          echo "duration=$(jq '.stats.duration' < playwright-report/results.json | awk '{print $1 / 1000}')"  >> $GITHUB_ENV
 
       - name: Post to a Slack channel
         if: always()
@@ -67,7 +67,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Results:*       ${{ env.passed }}/ ${{ env.total }} Passed )"
+                    "text": "*Results:*       ${{ env.passed }}/ ${{ env.total }} Passed"
                   }
                 },
                 {
