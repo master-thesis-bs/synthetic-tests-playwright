@@ -36,6 +36,13 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
 
+      - name: Set test result variables
+        run: |
+          echo "passed=$(jq '.summary.passed' < playwright-report/results.json)" >> $GITHUB_ENV
+          echo "total=$(jq '.summary.total' < playwright-report/results.json)" >> $GITHUB_ENV
+          echo "percentage=$(( $(jq '.summary.passed' < playwright-report/results.json) * 100 / $(jq '.summary.total' < playwright-report/results.json) ))" >> $GITHUB_ENV
+          echo "duration=$(jq '.summary.duration' < playwright-report/results.json)" >> $GITHUB_ENV
+
       - name: Post to a Slack channel
         if: always()
         id: slack
@@ -44,38 +51,49 @@ jobs:
           channel-id: 'C0721UJDXSP'
           payload: |
             {
-              "text": "${{ github.action }}: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
               "blocks": [
                 {
-                  "type": "actions",
-                  "elements": [
-                    {
-                      "type": "section",
-                      "text": {
-                        "type": "mrkdwn",
-                        "text": "${{ github.action }}: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "text": {
-                        "type": "plain_text",
-                        "text": "Report url"
-                      },
-                      "url": "https://master-thesis-bs.github.io/synthetic-tests-playwright/"
-                    },
-                    {
-                      "type": "button",
-                      "text": {
-                        "type": "plain_text",
-                        "text": "Github action url"
-                      },
-                      "url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-                    }
-                  ]
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Selenium Synthetic Tests Results*"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Results:*       ${{ env.passed }}/ ${{ env.total }} Passed ( ${{ env.percentage }}% )"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Duration:*    ${{ env.duration }} seconds"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "<https://master-thesis-bs.github.io/synthetic-tests-selenium/${{ github.run_number }}|Go to Test Results>"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Go to Github Action>"
+                  }
                 }
-              ],
-              "channel-id": "C0721UJDXSP"
+              ]
             }
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
