@@ -1,4 +1,4 @@
-import {Page} from "@playwright/test";
+import {expect, Page} from "@playwright/test";
 import LoginPage from "./LoginPage";
 import RegistrationPage from "./RegistrationPage";
 import ProfilePage from "./ProfilePage";
@@ -18,6 +18,7 @@ export default class HomePage {
     }
 
     async clickLoginButton() {
+        await expect(this.loginButtonLocator).toBeEnabled();
         await this.loginButtonLocator.click();
         return new LoginPage(this.page)
     }
@@ -31,6 +32,7 @@ export default class HomePage {
     }
 
     async clickLogoutButton() {
+        await expect(this.logoutButtonLocator).toBeEnabled();
         await this.logoutButtonLocator.click()
         return new HomePage(this.page);
     }
@@ -40,11 +42,13 @@ export default class HomePage {
     }
 
     async clickRegisterButton() {
+        await expect(this.registerButtonLocator).toBeEnabled();
         await this.registerButtonLocator.click();
         return new RegistrationPage(this.page);
     }
 
     async clickProfileButton() {
+        await expect(this.profileButtonLocator).toBeEnabled();
         await this.profileButtonLocator.click();
         return new ProfilePage(this.page);
     }
