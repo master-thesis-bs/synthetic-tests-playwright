@@ -83,7 +83,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "<https://master-thesis-bs.github.io/synthetic-tests-selenium/${{ github.run_number }}|Go to Test Results>"
+                    "text": "<https://master-thesis-bs.github.io/synthetic-tests-playwright//${{ github.run_number }}|Go to Test Results>"
                   }
                 },
                 {
