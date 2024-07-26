@@ -4,3 +4,4 @@ on: workflow_dispatch
 jobs:
   call-core-workflow:
     uses: ./.github/workflows/core-flow.yml
+    secrets: inherit
