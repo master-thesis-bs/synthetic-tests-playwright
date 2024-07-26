@@ -3,4 +3,4 @@ on: workflow_dispatch
 
 jobs:
   call-core-workflow:
-    uses: ./core-flow.yml
+    uses: .github/workflows/core-flow.yml
