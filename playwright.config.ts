@@ -9,7 +9,7 @@ export default defineConfig({
     reporter: [
         ['list'],
         ['html'],
-        ['json', {outputFile: 'results.json'}]
+        ['json', {outputFile: 'playwright-report/results.json'}]
     ],
     use: {
         baseURL: 'https://master-thesis-bs.click',
