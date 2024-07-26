@@ -15,6 +15,7 @@ export default defineConfig({
         baseURL: 'https://master-thesis-bs.click',
         trace: 'on-first-retry',
         ignoreHTTPSErrors: true,
+        screenshot: 'only-on-failure',
     },
 
     projects: [
