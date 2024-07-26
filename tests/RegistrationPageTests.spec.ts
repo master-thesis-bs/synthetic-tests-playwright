@@ -18,5 +18,5 @@ test('registration positive test', async ({page}) => {
     await profilePage.enterDeleteAccountPassword("Zaq12wsx");
     homePage = await profilePage.clickOnDeleteAccountButton();
 
-    expect(await homePage.isLoginButtonDisplayed()).toBeTruthy();;
+    expect(await homePage.isLoginButtonDisplayed()).toBeTruthy();
 })
