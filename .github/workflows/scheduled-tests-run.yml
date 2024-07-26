@@ -1,7 +1,7 @@
-name: Scheduled tests (5 minutes)
+name: Scheduled tests (10 minutes)
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/10 * * * *"
 
 jobs:
   call-core-workflow:
