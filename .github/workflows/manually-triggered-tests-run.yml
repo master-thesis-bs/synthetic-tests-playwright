@@ -40,10 +40,9 @@ jobs:
       - name: Set test result variables
         if: always()
         run: |
-          echo "passed=$(jq '.summary.passed' < playwright-report/results.json)" >> $GITHUB_ENV
-          echo "total=$(jq '.summary.total' < playwright-report/results.json)" >> $GITHUB_ENV
-          echo "percentage=$(( $(jq '.summary.passed' < playwright-report/results.json) * 100 / $(jq '.summary.total' < playwright-report/results.json) ))" >> $GITHUB_ENV
-          echo "duration=$(jq '.summary.duration' < playwright-report/results.json)" >> $GITHUB_ENV
+          echo "passed=$(jq '.stats.expected' < playwright-report/results.json)" >> $GITHUB_ENV
+          echo "total=$(( $(jq '.stats.expected' < playwright-report/results.json) + $(jq '.stats.unexpected' < playwright-report/results.json) ))" >> $GITHUB_ENV
+          echo "duration=$(jq '.stats.duration' < playwright-report/results.json)" >> $GITHUB_ENV
 
       - name: Post to a Slack channel
         if: always()
@@ -68,7 +67,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Results:*       ${{ env.passed }}/ ${{ env.total }} Passed ( ${{ env.percentage }}% )"
+                    "text": "*Results:*       ${{ env.passed }}/ ${{ env.total }} Passed )"
                   }
                 },
                 {
