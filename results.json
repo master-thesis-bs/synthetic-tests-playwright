@@ -77,17 +77,64 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 711,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 5824,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 47,
+                      "line": 21
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 47,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T05:55:42.304Z",
-                  "attachments": []
+                  "startTime": "2024-07-27T06:20:00.133Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 47,
+                    "line": 21
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 753,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-07-27T06:20:10.597Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium-retry1/trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "f55a23ca3bd051374133-6873c97e07759d4c9b0e",
@@ -118,12 +165,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 2186,
+                  "duration": 2544,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T05:55:42.292Z",
+                  "startTime": "2024-07-27T06:20:00.150Z",
                   "attachments": []
                 }
               ],
@@ -156,14 +203,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 2797,
+                  "duration": 2857,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T05:55:43.243Z",
+                  "startTime": "2024-07-27T06:20:06.916Z",
                   "attachments": []
                 }
               ],
@@ -180,11 +227,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-27T05:55:41.738Z",
-    "duration": 4358.455,
-    "expected": 3,
+    "startTime": "2024-07-27T06:19:59.602Z",
+    "duration": 11925.858,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 0
+    "flaky": 1
   }
 }
