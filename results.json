@@ -65,7 +65,7 @@
       "specs": [
         {
           "title": "home page",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -77,93 +77,17 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 35018,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
-                      },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 882,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T12:25:15.925Z",
-                  "attachments": []
-                },
-                {
-                  "workerIndex": 2,
-                  "status": "timedOut",
-                  "duration": 35037,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
-                      },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-07-27T12:25:52.854Z",
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium-retry1/trace.zip"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 4,
-                  "status": "timedOut",
-                  "duration": 35016,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
-                      },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2024-07-27T12:26:28.546Z",
+                  "startTime": "2024-07-27T15:32:14.913Z",
                   "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "f55a23ca3bd051374133-6873c97e07759d4c9b0e",
@@ -193,90 +117,131 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "status": "timedOut",
-                  "duration": 35025,
+                  "status": "failed",
+                  "duration": 2289,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:18:53",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                      "column": 53,
+                      "line": 18
+                    },
+                    "snippet": "  16 |     homePage = await homePage.clickLogoutButton();\n  17 |\n> 18 |     expect(await homePage.isLoginButtonDisplayed()).toBeTruthy();\n     |                                                     ^\n  19 | })\n  20 |"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                        "column": 53,
+                        "line": 18
                       },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  16 |     homePage = await homePage.clickLogoutButton();\n  17 |\n> 18 |     expect(await homePage.isLoginButtonDisplayed()).toBeTruthy();\n     |                                                     ^\n  19 | })\n  20 |\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:18:53"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T12:25:15.917Z",
-                  "attachments": []
+                  "startTime": "2024-07-27T15:32:14.869Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                    "column": 53,
+                    "line": 18
+                  }
                 },
                 {
                   "workerIndex": 3,
-                  "status": "timedOut",
-                  "duration": 35045,
+                  "status": "failed",
+                  "duration": 2253,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:18:53",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                      "column": 53,
+                      "line": 18
+                    },
+                    "snippet": "  16 |     homePage = await homePage.clickLogoutButton();\n  17 |\n> 18 |     expect(await homePage.isLoginButtonDisplayed()).toBeTruthy();\n     |                                                     ^\n  19 | })\n  20 |"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                        "column": 53,
+                        "line": 18
                       },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  16 |     homePage = await homePage.clickLogoutButton();\n  17 |\n> 18 |     expect(await homePage.isLoginButtonDisplayed()).toBeTruthy();\n     |                                                     ^\n  19 | })\n  20 |\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:18:53"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-27T12:25:52.876Z",
+                  "startTime": "2024-07-27T15:32:17.872Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium-retry1/test-failed-1.png"
+                    },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
                       "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium-retry1/trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                    "column": 53,
+                    "line": 18
+                  }
                 },
                 {
                   "workerIndex": 5,
-                  "status": "timedOut",
-                  "duration": 35017,
+                  "status": "failed",
+                  "duration": 1564,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:13:54",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                      "column": 54,
+                      "line": 13
+                    },
+                    "snippet": "  11 |     homePage = await loginPage.submitLoginForm();\n  12 |\n> 13 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  14 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  15 |\n  16 |     homePage = await homePage.clickLogoutButton();"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                        "column": 54,
+                        "line": 13
                       },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  11 |     homePage = await loginPage.submitLoginForm();\n  12 |\n> 13 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  14 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  15 |\n  16 |     homePage = await homePage.clickLogoutButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:13:54"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-27T12:26:28.600Z",
-                  "attachments": []
+                  "startTime": "2024-07-27T15:32:20.771Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium-retry2/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts",
+                    "column": 54,
+                    "line": 13
+                  }
                 }
               ],
               "status": "unexpected"
@@ -308,91 +273,132 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
-                  "status": "timedOut",
-                  "duration": 35013,
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 1274,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                      "column": 54,
+                      "line": 14
+                    },
+                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                        "column": 54,
+                        "line": 14
                       },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T12:27:04.135Z",
-                  "attachments": []
+                  "startTime": "2024-07-27T15:32:16.022Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                    "column": 54,
+                    "line": 14
+                  }
                 },
                 {
-                  "workerIndex": 7,
-                  "status": "timedOut",
-                  "duration": 35036,
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 1503,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                      "column": 54,
+                      "line": 14
+                    },
+                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                        "column": 54,
+                        "line": 14
                       },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-27T12:27:39.685Z",
+                  "startTime": "2024-07-27T15:32:17.763Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium-retry1/test-failed-1.png"
+                    },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
                       "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium-retry1/trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                    "column": 54,
+                    "line": 14
+                  }
                 },
                 {
-                  "workerIndex": 8,
-                  "status": "timedOut",
-                  "duration": 35014,
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 1309,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                      "column": 54,
+                      "line": 14
+                    },
+                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                        "column": 54,
+                        "line": 14
                       },
-                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-27T12:28:15.281Z",
-                  "attachments": []
+                  "startTime": "2024-07-27T15:32:19.855Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium-retry2/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
+                    "column": 54,
+                    "line": 14
+                  }
                 }
               ],
               "status": "unexpected"
@@ -408,11 +414,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-27T12:25:15.335Z",
-    "duration": 215126.63400000002,
-    "expected": 0,
+    "startTime": "2024-07-27T15:32:14.235Z",
+    "duration": 8260.295,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 2,
     "flaky": 0
   }
 }
