@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Jul 27 15:07:33 UTC 2024","Sat Jul 27 15:07:34 UTC 2024","875","chromium","HomePageTests.spec.ts","","","","home page",""
-"failed","Sat Jul 27 15:07:39 UTC 2024","Sat Jul 27 15:07:40 UTC 2024","1317","chromium","RegistrationPageTests.spec.ts","","","","registration positive test",""
-"passed","Sat Jul 27 15:07:36 UTC 2024","Sat Jul 27 15:07:38 UTC 2024","2476","chromium","LoginPageTests.spec.ts","","","","login positive test",""
+"passed","Sat Jul 27 15:13:22 UTC 2024","Sat Jul 27 15:13:25 UTC 2024","2876","chromium","RegistrationPageTests.spec.ts","","","","registration positive test",""
+"passed","Sat Jul 27 15:13:21 UTC 2024","Sat Jul 27 15:13:24 UTC 2024","2220","chromium","LoginPageTests.spec.ts","","","","login positive test",""
+"passed","Sat Jul 27 15:13:21 UTC 2024","Sat Jul 27 15:13:22 UTC 2024","814","chromium","HomePageTests.spec.ts","","","","home page",""
