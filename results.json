@@ -78,12 +78,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 868,
+                  "duration": 924,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T09:15:10.321Z",
+                  "startTime": "2024-07-27T09:27:20.411Z",
                   "attachments": []
                 }
               ],
@@ -117,17 +117,64 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 2318,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 5873,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEditable\u001b[2m()\u001b[22m\n\nLocator: locator('//button')\nExpected: editable\nReceived: readOnly\nCall log:\n  \u001b[2m- expect.toBeEditable with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEditable\u001b[2m()\u001b[22m\n\nLocator: locator('//button')\nExpected: editable\nReceived: readOnly\nCall log:\n  \u001b[2m- expect.toBeEditable with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button')\u001b[22m\n\n    at LoginPage.enterEmail (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/LoginPage.ts:13:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:9:21",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/LoginPage.ts",
+                      "column": 50,
+                      "line": 13
+                    },
+                    "snippet": "   at ../pages/LoginPage.ts:13\n\n  11 |\n  12 |     async enterEmail(email: string) {\n> 13 |         await expect(this.submitLoginFormButton).toBeEditable();\n     |                                                  ^\n  14 |         await this.emailInputField.fill(email);\n  15 |     }\n  16 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/LoginPage.ts",
+                        "column": 50,
+                        "line": 13
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEditable\u001b[2m()\u001b[22m\n\nLocator: locator('//button')\nExpected: editable\nReceived: readOnly\nCall log:\n  \u001b[2m- expect.toBeEditable with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//button')\u001b[22m\n\n\n   at ../pages/LoginPage.ts:13\n\n  11 |\n  12 |     async enterEmail(email: string) {\n> 13 |         await expect(this.submitLoginFormButton).toBeEditable();\n     |                                                  ^\n  14 |         await this.emailInputField.fill(email);\n  15 |     }\n  16 |\n\n    at LoginPage.enterEmail (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/LoginPage.ts:13:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:9:21"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T09:15:10.308Z",
-                  "attachments": []
+                  "startTime": "2024-07-27T09:27:20.414Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/LoginPage.ts",
+                    "column": 50,
+                    "line": 13
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 2388,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-07-27T09:27:26.926Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium-retry1/trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "068019d62aa3da8a0d39-a4a66f870c67419baa99",
@@ -158,12 +205,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 2806,
+                  "duration": 2849,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-27T09:15:11.412Z",
+                  "startTime": "2024-07-27T09:27:21.563Z",
                   "attachments": []
                 }
               ],
@@ -180,11 +227,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-27T09:15:09.729Z",
-    "duration": 4529.702,
-    "expected": 3,
+    "startTime": "2024-07-27T09:27:19.812Z",
+    "duration": 9674.476999999999,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 0
+    "flaky": 1
   }
 }
