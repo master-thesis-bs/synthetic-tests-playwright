@@ -78,12 +78,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 957,
+                  "duration": 547,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-28T18:18:43.403Z",
+                  "startTime": "2024-07-28T18:26:32.206Z",
                   "attachments": []
                 }
               ],
@@ -118,12 +118,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 1681,
+                  "duration": 1365,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-28T18:18:43.416Z",
+                  "startTime": "2024-07-28T18:26:32.212Z",
                   "attachments": []
                 }
               ],
@@ -145,7 +145,7 @@
       "specs": [
         {
           "title": "registration positive test",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -157,134 +157,17 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 861,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
-                    "location": {
-                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                      "column": 54,
-                      "line": 14
-                    },
-                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                        "column": 54,
-                        "line": 14
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 1632,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-28T18:18:47.527Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                    "column": 54,
-                    "line": 14
-                  }
-                },
-                {
-                  "workerIndex": 2,
-                  "status": "failed",
-                  "duration": 925,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
-                    "location": {
-                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                      "column": 54,
-                      "line": 14
-                    },
-                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                        "column": 54,
-                        "line": 14
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-07-28T18:18:48.817Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium-retry1/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium-retry1/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                    "column": 54,
-                    "line": 14
-                  }
-                },
-                {
-                  "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 892,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
-                    "location": {
-                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                      "column": 54,
-                      "line": 14
-                    },
-                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                        "column": 54,
-                        "line": 14
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2024-07-28T18:18:50.321Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/RegistrationPageTests-registration-positive-test-chromium-retry2/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                    "column": 54,
-                    "line": 14
-                  }
+                  "startTime": "2024-07-28T18:26:33.005Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "573a7a56fc074553c0b7-8628f8100d60acbcb7a8",
@@ -297,11 +180,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-28T18:18:42.768Z",
-    "duration": 8596.827,
-    "expected": 2,
+    "startTime": "2024-07-28T18:26:31.661Z",
+    "duration": 3026.555,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
