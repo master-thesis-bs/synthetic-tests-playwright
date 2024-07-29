@@ -78,12 +78,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1154,
+                  "duration": 809,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-28T23:52:19.927Z",
+                  "startTime": "2024-07-29T01:37:39.937Z",
                   "attachments": []
                 }
               ],
@@ -118,7 +118,7 @@
                 {
                   "workerIndex": 1,
                   "status": "failed",
-                  "duration": 2070,
+                  "duration": 1685,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:13:54",
@@ -142,7 +142,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-28T23:52:19.946Z",
+                  "startTime": "2024-07-29T01:37:39.934Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -159,12 +159,12 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 2477,
+                  "duration": 2022,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-28T23:52:23.476Z",
+                  "startTime": "2024-07-29T01:37:42.303Z",
                   "attachments": [
                     {
                       "name": "trace",
@@ -205,7 +205,7 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 1717,
+                  "duration": 1121,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
@@ -229,7 +229,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-28T23:52:22.093Z",
+                  "startTime": "2024-07-29T01:37:40.984Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -246,7 +246,7 @@
                 {
                   "workerIndex": 3,
                   "status": "failed",
-                  "duration": 1833,
+                  "duration": 1390,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
@@ -270,7 +270,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-28T23:52:24.249Z",
+                  "startTime": "2024-07-29T01:37:42.602Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -292,7 +292,7 @@
                 {
                   "workerIndex": 4,
                   "status": "failed",
-                  "duration": 1634,
+                  "duration": 1133,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
@@ -316,7 +316,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-28T23:52:26.645Z",
+                  "startTime": "2024-07-29T01:37:44.602Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -344,8 +344,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-28T23:52:19.372Z",
-    "duration": 9060.982,
+    "startTime": "2024-07-29T01:37:39.360Z",
+    "duration": 6545.893,
     "expected": 1,
     "skipped": 0,
     "unexpected": 1,
