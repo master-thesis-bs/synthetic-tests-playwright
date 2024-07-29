@@ -78,31 +78,31 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 5839,
+                  "duration": 304,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 47,
-                      "line": 21
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 47,
-                        "line": 21
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-29T09:24:57.586Z",
+                  "startTime": "2024-07-29T09:38:57.391Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -112,38 +112,38 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 47,
-                    "line": 21
+                    "column": 25,
+                    "line": 17
                   }
                 },
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "status": "failed",
-                  "duration": 5686,
+                  "duration": 276,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 47,
-                      "line": 21
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 47,
-                        "line": 21
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-29T09:25:05.201Z",
+                  "startTime": "2024-07-29T09:38:58.439Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -158,38 +158,38 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 47,
-                    "line": 21
+                    "column": 25,
+                    "line": 17
                   }
                 },
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 5,
                   "status": "failed",
-                  "duration": 5501,
+                  "duration": 187,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 47,
-                      "line": 21
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 47,
-                        "line": 21
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-29T09:25:11.538Z",
+                  "startTime": "2024-07-29T09:38:59.373Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -199,8 +199,8 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 47,
-                    "line": 21
+                    "column": 25,
+                    "line": 17
                   }
                 }
               ],
@@ -235,31 +235,31 @@
                 {
                   "workerIndex": 1,
                   "status": "failed",
-                  "duration": 5843,
+                  "duration": 288,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 47,
-                      "line": 21
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 47,
-                        "line": 21
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-29T09:24:57.582Z",
+                  "startTime": "2024-07-29T09:38:57.426Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -269,38 +269,38 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 47,
-                    "line": 21
+                    "column": 25,
+                    "line": 17
                   }
                 },
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 2,
                   "status": "failed",
-                  "duration": 5724,
+                  "duration": 258,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 47,
-                      "line": 21
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 47,
-                        "line": 21
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-29T09:25:05.234Z",
+                  "startTime": "2024-07-29T09:38:58.406Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -315,38 +315,38 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 47,
-                    "line": 21
+                    "column": 25,
+                    "line": 17
                   }
                 },
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 4,
                   "status": "failed",
-                  "duration": 5547,
+                  "duration": 203,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 47,
-                      "line": 21
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 47,
-                        "line": 21
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-29T09:25:11.635Z",
+                  "startTime": "2024-07-29T09:38:59.304Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -356,8 +356,8 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 47,
-                    "line": 21
+                    "column": 25,
+                    "line": 17
                   }
                 }
               ],
@@ -392,31 +392,31 @@
                 {
                   "workerIndex": 6,
                   "status": "failed",
-                  "duration": 5445,
+                  "duration": 182,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 50,
-                      "line": 45
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 50,
-                        "line": 45
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-29T09:25:17.617Z",
+                  "startTime": "2024-07-29T09:39:00.065Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -426,38 +426,38 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 50,
-                    "line": 45
+                    "column": 25,
+                    "line": 17
                   }
                 },
                 {
                   "workerIndex": 7,
                   "status": "failed",
-                  "duration": 5573,
+                  "duration": 204,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 50,
-                      "line": 45
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 50,
-                        "line": 45
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-29T09:25:23.589Z",
+                  "startTime": "2024-07-29T09:39:00.785Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -472,38 +472,38 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 50,
-                    "line": 45
+                    "column": 25,
+                    "line": 17
                   }
                 },
                 {
                   "workerIndex": 8,
                   "status": "failed",
-                  "duration": 5446,
+                  "duration": 190,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43",
+                    "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20",
                     "location": {
                       "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 50,
-                      "line": 45
+                      "column": 25,
+                      "line": 17
                     },
-                    "snippet": "   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }"
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 50,
-                        "line": 45
+                        "column": 25,
+                        "line": 17
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43"
+                      "message": "Error: page.goto: net::ERR_ABORTED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-29T09:25:29.734Z",
+                  "startTime": "2024-07-29T09:39:01.540Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -513,8 +513,8 @@
                   ],
                   "errorLocation": {
                     "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 50,
-                    "line": 45
+                    "column": 25,
+                    "line": 17
                   }
                 }
               ],
@@ -531,8 +531,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-29T09:24:57.021Z",
-    "duration": 38304.848999999995,
+    "startTime": "2024-07-29T09:38:56.847Z",
+    "duration": 5037.878,
     "expected": 0,
     "skipped": 0,
     "unexpected": 3,
