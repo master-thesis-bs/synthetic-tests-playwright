@@ -65,7 +65,7 @@
       "specs": [
         {
           "title": "home page",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -77,17 +77,134 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1055,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 5482,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 47,
+                      "line": 21
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 47,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-29T08:42:39.096Z",
-                  "attachments": []
+                  "startTime": "2024-07-29T08:58:39.844Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 47,
+                    "line": 21
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 5480,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 47,
+                      "line": 21
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 47,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-07-29T08:58:46.051Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 47,
+                    "line": 21
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 5412,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 47,
+                      "line": 21
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 47,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:7:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2024-07-29T08:58:52.171Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium-retry2/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 47,
+                    "line": 21
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "f55a23ca3bd051374133-6873c97e07759d4c9b0e",
@@ -105,7 +222,7 @@
       "specs": [
         {
           "title": "login positive test",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -117,17 +234,134 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 2370,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 5518,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 47,
+                      "line": 21
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 47,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-29T08:42:39.083Z",
-                  "attachments": []
+                  "startTime": "2024-07-29T08:58:39.839Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 47,
+                    "line": 21
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 5583,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 47,
+                      "line": 21
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 47,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-07-29T08:58:46.114Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 47,
+                    "line": 21
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "status": "failed",
+                  "duration": 5429,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 47,
+                      "line": 21
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 47,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'login\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'login\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:21\n\n  19 |\n  20 |     async clickLoginButton() {\n> 21 |         await expect(this.loginButtonLocator).toBeEnabled();\n     |                                               ^\n  22 |         await this.loginButtonLocator.click();\n  23 |         return new LoginPage(this.page)\n  24 |     }\n\n    at HomePage.clickLoginButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:21:47)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:7:36"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2024-07-29T08:58:52.400Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/LoginPageTests-login-positive-test-chromium-retry2/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 47,
+                    "line": 21
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "068019d62aa3da8a0d39-a4a66f870c67419baa99",
@@ -156,33 +390,33 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "status": "failed",
-                  "duration": 1517,
+                  "duration": 5351,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43",
                     "location": {
-                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                      "column": 54,
-                      "line": 14
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 50,
+                      "line": 45
                     },
-                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
+                    "snippet": "   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                        "column": 54,
-                        "line": 14
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 50,
+                        "line": 45
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-29T08:42:40.399Z",
+                  "startTime": "2024-07-29T08:58:58.133Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -191,39 +425,39 @@
                     }
                   ],
                   "errorLocation": {
-                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                    "column": 54,
-                    "line": 14
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 50,
+                    "line": 45
                   }
                 },
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 7,
                   "status": "failed",
-                  "duration": 1729,
+                  "duration": 5442,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43",
                     "location": {
-                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                      "column": 54,
-                      "line": 14
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 50,
+                      "line": 45
                     },
-                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
+                    "snippet": "   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                        "column": 54,
-                        "line": 14
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 50,
+                        "line": 45
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-29T08:42:42.359Z",
+                  "startTime": "2024-07-29T08:59:04.015Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -237,39 +471,39 @@
                     }
                   ],
                   "errorLocation": {
-                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                    "column": 54,
-                    "line": 14
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 50,
+                    "line": 45
                   }
                 },
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 8,
                   "status": "failed",
-                  "duration": 1554,
+                  "duration": 5342,
                   "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54",
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43",
                     "location": {
-                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                      "column": 54,
-                      "line": 14
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 50,
+                      "line": 45
                     },
-                    "snippet": "  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();"
+                    "snippet": "   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                        "column": 54,
-                        "line": 14
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 50,
+                        "line": 45
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  12 |     homePage = await registrationPage.submitRegistrationForm();\n  13 |\n> 14 |     expect(await homePage.isLogoutButtonDisplayed()).toBeTruthy();\n     |                                                      ^\n  15 |     expect(await homePage.isProfileButtonDisplayed()).toBeTruthy();\n  16 |\n  17 |     let profilePage = await homePage.clickProfileButton();\n\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:14:54"
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@data-aid=\\'register\\']')\nExpected: enabled\nReceived: disabled\nCall log:\n  \u001b[2m- expect.toBeEnabled with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@data-aid=\\'register\\']')\u001b[22m\n\n\n   at ../pages/HomePage.ts:45\n\n  43 |\n  44 |     async clickRegisterButton() {\n> 45 |         await expect(this.registerButtonLocator).toBeEnabled();\n     |                                                  ^\n  46 |         await this.registerButtonLocator.click();\n  47 |         return new RegistrationPage(this.page);\n  48 |     }\n\n    at HomePage.clickRegisterButton (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:45:50)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:7:43"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-29T08:42:44.651Z",
+                  "startTime": "2024-07-29T08:59:10.012Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -278,9 +512,9 @@
                     }
                   ],
                   "errorLocation": {
-                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts",
-                    "column": 54,
-                    "line": 14
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 50,
+                    "line": 45
                   }
                 }
               ],
@@ -297,11 +531,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-29T08:42:38.502Z",
-    "duration": 7850.985,
-    "expected": 2,
+    "startTime": "2024-07-29T08:58:39.182Z",
+    "duration": 36327.074,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 3,
     "flaky": 0
   }
 }
