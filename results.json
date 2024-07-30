@@ -78,47 +78,6 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 280,
-                  "error": {
-                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20",
-                    "location": {
-                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                      "column": 25,
-                      "line": 17
-                    },
-                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                        "column": 25,
-                        "line": 17
-                      },
-                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-07-30T07:48:51.426Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
-                    "column": 25,
-                    "line": 17
-                  }
-                },
-                {
-                  "workerIndex": 2,
-                  "status": "failed",
                   "duration": 298,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
@@ -142,8 +101,49 @@
                   ],
                   "stdout": [],
                   "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-30T08:11:02.250Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/test-results/HomePageTests-home-page-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                    "column": 25,
+                    "line": 17
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 347,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20",
+                    "location": {
+                      "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                      "column": 25,
+                      "line": 17
+                    },
+                    "snippet": "   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts",
+                        "column": 25,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/HomePage.ts:17\n\n  15 |\n  16 |     async navigate() {\n> 17 |         await this.page.goto('/');\n     |                         ^\n  18 |     }\n  19 |\n  20 |     async clickLoginButton() {\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-30T07:48:52.351Z",
+                  "startTime": "2024-07-30T08:11:03.273Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -165,7 +165,7 @@
                 {
                   "workerIndex": 4,
                   "status": "failed",
-                  "duration": 254,
+                  "duration": 257,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
                     "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/HomePageTests.spec.ts:6:20",
@@ -189,7 +189,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-30T07:48:53.261Z",
+                  "startTime": "2024-07-30T08:11:04.244Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -235,7 +235,7 @@
                 {
                   "workerIndex": 1,
                   "status": "failed",
-                  "duration": 272,
+                  "duration": 285,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
                     "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20",
@@ -259,7 +259,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-30T07:48:51.426Z",
+                  "startTime": "2024-07-30T08:11:02.256Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -274,9 +274,9 @@
                   }
                 },
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 2,
                   "status": "failed",
-                  "duration": 282,
+                  "duration": 351,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
                     "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20",
@@ -300,7 +300,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-30T07:48:52.390Z",
+                  "startTime": "2024-07-30T08:11:03.275Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -322,7 +322,7 @@
                 {
                   "workerIndex": 5,
                   "status": "failed",
-                  "duration": 257,
+                  "duration": 264,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
                     "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/LoginPageTests.spec.ts:6:20",
@@ -346,7 +346,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-30T07:48:53.268Z",
+                  "startTime": "2024-07-30T08:11:04.278Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -392,7 +392,7 @@
                 {
                   "workerIndex": 6,
                   "status": "failed",
-                  "duration": 185,
+                  "duration": 254,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
                     "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20",
@@ -416,7 +416,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-30T07:48:54.054Z",
+                  "startTime": "2024-07-30T08:11:05.058Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -433,7 +433,7 @@
                 {
                   "workerIndex": 7,
                   "status": "failed",
-                  "duration": 225,
+                  "duration": 283,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
                     "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20",
@@ -457,7 +457,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-07-30T07:48:54.745Z",
+                  "startTime": "2024-07-30T08:11:05.845Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -479,7 +479,7 @@
                 {
                   "workerIndex": 8,
                   "status": "failed",
-                  "duration": 184,
+                  "duration": 244,
                   "error": {
                     "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n",
                     "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://master-thesis-bs.click/\nCall log:\n  \u001b[2m- navigating to \"https://master-thesis-bs.click/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.navigate (/home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/pages/HomePage.ts:17:25)\n    at /home/runner/work/synthetic-tests-playwright/synthetic-tests-playwright/tests/RegistrationPageTests.spec.ts:6:20",
@@ -503,7 +503,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2024-07-30T07:48:55.502Z",
+                  "startTime": "2024-07-30T08:11:06.684Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -531,8 +531,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-30T07:48:50.871Z",
-    "duration": 4945.405000000001,
+    "startTime": "2024-07-30T08:11:01.660Z",
+    "duration": 5388.35,
     "expected": 0,
     "skipped": 0,
     "unexpected": 3,
