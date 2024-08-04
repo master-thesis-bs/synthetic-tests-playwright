@@ -2,38 +2,46 @@ import {expect, test} from '@playwright/test';
 import HomePage from '../pages/HomePage';
 
 test('login positive test', async ({page}) => {
-    let homePage = new HomePage(page)
-    homePage = await homePage.navigate();
+  let homePage = new HomePage(page)
+  homePage = await homePage.navigate();
 
-    expect(homePage.isHomePageTitleDisplayed()).toBeTruthy();
-    expect(homePage.isLoginButtonDisplayed()).toBeTruthy();
+  await Promise.all([
+    expect(homePage.title).toBeVisible(),
+    expect(homePage.loginPageButtonLocator).toBeVisible()
+  ])
 
-    let loginPage = await homePage.clickLoginPageButton();
+  let loginPage = await homePage.clickLoginPageButton();
 
-    expect(loginPage.isLoginPageTitleDisplayed()).toBeTruthy()
-    expect(loginPage.isLoginPageSubTitleDisplayed()).toBeTruthy()
-    expect(loginPage.isEmailInputDisplayed()).toBeTruthy()
-    expect(loginPage.isPasswordInputDisplayed()).toBeTruthy()
-    expect(loginPage.isSubmitLoginFormButtonDisplayed()).toBeTruthy()
-    expect(loginPage.isRegistrationPageLinkDisplayed()).toBeTruthy()
-    expect(loginPage.isHomePageLinkDisplayed()).toBeTruthy()
+  await Promise.all([
+    expect(loginPage.loginPageTitle).toBeVisible(),
+    expect(loginPage.loginPageSubTitle).toBeVisible(),
+    expect(loginPage.emailInputField).toBeVisible(),
+    expect(loginPage.passwordInputField).toBeVisible(),
+    expect(loginPage.submitLoginFormButton).toBeVisible(),
+    expect(loginPage.registrationPageLink).toBeVisible(),
+    expect(loginPage.homePageLink).toBeVisible()
+  ])
 
-    await loginPage.enterEmail("admin@gmail.com");
-    await loginPage.enterPassword("Zaq12wsx");
-    let protectedPage = await loginPage.clickSubmitLoginForm();
+  await loginPage.enterEmail("admin@gmail.com");
+  await loginPage.enterPassword("Zaq12wsx");
+  let protectedPage = await loginPage.clickSubmitLoginForm();
 
-    expect(protectedPage.isProtectedPageTitleDisplayed()).toBeTruthy();
-    expect(protectedPage.isProtectedPageSubTitleDisplayed()).toBeTruthy();
-    expect(protectedPage.isSignOutButtonDisplayed()).toBeTruthy();
-    expect(protectedPage.isDeleteAccountButtonDisplayed()).toBeTruthy();
+  await Promise.all([
+    expect(protectedPage.protectedPageTitle).toBeVisible(),
+    expect(protectedPage.protectedPageSubTitle).toBeVisible(),
+    expect(protectedPage.signOutButton).toBeVisible(),
+    expect(protectedPage.deleteAccountButton).toBeVisible()
+  ])
 
-    loginPage = await protectedPage.clickOnSignOutButton();
+  loginPage = await protectedPage.clickOnSignOutButton();
 
-    expect(loginPage.isLoginPageTitleDisplayed()).toBeTruthy()
-    expect(loginPage.isLoginPageSubTitleDisplayed()).toBeTruthy()
-    expect(loginPage.isEmailInputDisplayed()).toBeTruthy()
-    expect(loginPage.isPasswordInputDisplayed()).toBeTruthy()
-    expect(loginPage.isSubmitLoginFormButtonDisplayed()).toBeTruthy()
-    expect(loginPage.isRegistrationPageLinkDisplayed()).toBeTruthy()
-    expect(loginPage.isHomePageLinkDisplayed()).toBeTruthy()
+  await Promise.all([
+    expect(loginPage.loginPageTitle).toBeVisible(),
+    expect(loginPage.loginPageSubTitle).toBeVisible(),
+    expect(loginPage.emailInputField).toBeVisible(),
+    expect(loginPage.passwordInputField).toBeVisible(),
+    expect(loginPage.submitLoginFormButton).toBeVisible(),
+    expect(loginPage.registrationPageLink).toBeVisible(),
+    expect(loginPage.homePageLink).toBeVisible()
+  ])
 })

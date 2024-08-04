@@ -24,42 +24,13 @@ export default class LoginPage {
     await this.passwordInputField.fill(password);
   }
 
-  async isEmailInputDisplayed() {
-    return await this.emailInputField.isVisible();
-  }
-
-  async isPasswordInputDisplayed() {
-    return await this.passwordInputField.isVisible();
-  }
-
   async clickSubmitLoginForm() {
     await expect(this.submitLoginFormButton).toBeEnabled();
     await this.submitLoginFormButton.click();
     return new ProtectedPage(this.page);
   }
 
-  async isSubmitLoginFormButtonDisplayed() {
-    return this.submitLoginFormButton.isVisible();
-  }
-
-  async isLoginPageTitleDisplayed() {
-    return await this.loginPageTitle.isVisible();
-  }
-
-  async isLoginPageSubTitleDisplayed() {
-    return await this.loginPageSubTitle.isVisible();
-  }
-
-  async isRegistrationPageLinkDisplayed() {
-    return await this.registrationPageLink.isVisible();
-  }
-
-  async isHomePageLinkDisplayed() {
-    return await this.homePageLink.isVisible();
-  }
-
   async clickOnRegistrationPageLink() {
-    await expect(this.registrationPageLink).toBeEnabled();
     await this.registrationPageLink.click();
     return new RegistrationPage(this.page);
   }
