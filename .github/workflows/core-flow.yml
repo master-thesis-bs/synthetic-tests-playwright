@@ -56,7 +56,7 @@ jobs:
           ERRORS=0
           DURATION=0
 
-          for file in target/allure-results/*.json; do
+          for file in $(find target/allure-results/ -name "*.json"); do
             STATUS=$(jq -r '.status' $file)
             START=$(jq -r '.start' $file)
             STOP=$(jq -r '.stop' $file)
