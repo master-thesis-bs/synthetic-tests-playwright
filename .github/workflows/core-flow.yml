@@ -56,7 +56,7 @@ jobs:
           ERRORS=0
           DURATION=0
 
-          for file in $(find target/allure-results/ -name "*.json"); do
+          for file in $(find allure-results/ -name "*.json"); do
             STATUS=$(jq -r '.status' $file)
             START=$(jq -r '.start' $file)
             STOP=$(jq -r '.stop' $file)
@@ -112,14 +112,14 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Results:*       ${{ env.passed }}/ ${{ env.total }} Passed ( ${{ env.percentage }}% )"
+                    "text": "*Results:* ${{ env.passed }}/ ${{ env.total }} Passed ( ${{ env.percentage }}% )"
                   }
                 },
                 {
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Duration:*    ${{ env.duration }} seconds"
+                    "text": "*Duration:* ${{ env.duration }} seconds"
                   }
                 },
                 {
@@ -143,3 +143,4 @@ jobs:
             }
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+
