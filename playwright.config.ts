@@ -10,8 +10,23 @@ export default defineConfig({
   expect: {timeout: 100000},
   reporter: [
     ['list'],
-    ['html'],
-    ['json', {outputFile: 'playwright-report/results.json'}]
+    [
+      "allure-playwright",
+      {
+        detail: true,
+        outputFolder: "allure-results",
+        suiteTitle: true,
+        categories: [
+          {
+            name: "Outdated tests",
+            messageRegex: ".*FileNotFound.*",
+          },
+        ],
+        environmentInfo: {
+          framework: "playwright",
+        },
+      },
+    ]
   ],
   use: {
     baseURL: 'https://auth-nextjs-green.vercel.app/',
