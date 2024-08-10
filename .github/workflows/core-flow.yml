@@ -56,11 +56,12 @@ jobs:
           ERRORS=0
           DURATION=0
 
-          for file in $(find allure-results/ -name "*.json"); do
+          for file in $(find allure-results/ -name "*-result.json"); do
+            echo $file
             STATUS=$(jq -r '.status' $file)
             START=$(jq -r '.start' $file)
             STOP=$(jq -r '.stop' $file)
-
+          
             # Count the status
             TOTAL_TESTS=$((TOTAL_TESTS + 1))
             if [ "$STATUS" == "passed" ]; then
@@ -72,13 +73,20 @@ jobs:
             elif [ "$STATUS" == "broken" ]; then
               ERRORS=$((ERRORS + 1))
             fi
-
+          
             # Accumulate the duration
             DURATION=$((DURATION + STOP - START))
           done
-
+          
           # Calculate the pass percentage
           PERCENTAGE=$((100 * PASSED / TOTAL_TESTS))
+          
+          echo $TOTAL_TESTS
+          echo $PASSED
+          echo $FAILED
+          echo $SKIPPED
+          echo $ERRORS
+          echo $DURATION
 
           # Export the variables to the GitHub environment
           echo "total=$TOTAL_TESTS" >> $GITHUB_ENV
