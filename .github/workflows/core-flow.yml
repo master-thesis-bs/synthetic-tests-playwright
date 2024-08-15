@@ -82,12 +82,15 @@ jobs:
           # Calculate the pass percentage
           PERCENTAGE=$((100 * PASSED / TOTAL_TESTS))
           
+          # Convert the duration to seconds with a decimal value
+          DURATION_SECONDS=$(echo "scale=3; $DURATION / 1000" | bc -l)
+          
           echo $TOTAL_TESTS
           echo $PASSED
           echo $FAILED
           echo $SKIPPED
           echo $ERRORS
-          echo $DURATION
+          echo $DURATION_SECONDS
 
           # Export the variables to the GitHub environment
           echo "total=$TOTAL_TESTS" >> $GITHUB_ENV
@@ -95,7 +98,7 @@ jobs:
           echo "failed=$FAILED" >> $GITHUB_ENV
           echo "skipped=$SKIPPED" >> $GITHUB_ENV
           echo "errors=$ERRORS" >> $GITHUB_ENV
-          echo "duration=$DURATION" >> $GITHUB_ENV
+          echo "duration=$DURATION_SECONDS" >> $GITHUB_ENV
           echo "percentage=$PERCENTAGE" >> $GITHUB_ENV
 
 
