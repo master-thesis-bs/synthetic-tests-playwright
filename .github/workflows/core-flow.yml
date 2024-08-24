@@ -49,6 +49,7 @@ jobs:
 
       - name: Parse and Aggregate Test Results from Allure JSON Files
         id: aggregate_results
+        if: always()
         run: |
           TOTAL_TESTS=0
           PASSED=0
