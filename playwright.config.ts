@@ -29,7 +29,7 @@ export default defineConfig({
     ]
   ],
   use: {
-    baseURL: 'https://23.94.44.206:3000/',
+    baseURL: 'http://23.94.44.206:3000/',
     trace: 'on-first-retry',
     ignoreHTTPSErrors: true,
     screenshot: 'only-on-failure',
