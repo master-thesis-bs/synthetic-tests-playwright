@@ -29,7 +29,7 @@ export default defineConfig({
     ]
   ],
   use: {
-    baseURL: 'http://23.94.44.206:3000/',
+    baseURL: 'https://auth-nextjs-green.vercel.app/',
     trace: 'on-first-retry',
     ignoreHTTPSErrors: true,
     screenshot: 'only-on-failure',
