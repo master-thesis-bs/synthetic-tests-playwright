@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Aug 24 16:00:12 GMT 2024","Sat Aug 24 16:00:24 GMT 2024","11685","chromium","RegistrationPageTest.spec.ts","","","","registration positive test",""
+"passed","Sat Aug 24 16:00:09 GMT 2024","Sat Aug 24 16:00:11 GMT 2024","1870","chromium","HealthCheckTest.spec.ts","","","","home page",""
+"passed","Sat Aug 24 16:00:09 GMT 2024","Sat Aug 24 16:00:15 GMT 2024","5674","chromium","LoginPageTest.spec.ts","","","","login positive test",""
